@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% load staticfiles %}
+<link type="text/css" href="{%static 'cs/login.css'}" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+{% block content %}
+  <h2>iahsfoiahdf</h2>
+  <form method="post" class="form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}
